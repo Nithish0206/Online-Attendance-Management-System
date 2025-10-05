@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f8fb;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  background: #007bff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* Login Page */
+.login-container {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.login-card {
+  width: 300px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.login-card input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  background: linear-gradient(45deg, #0056b3, #004099);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #eef6ff;
+}
+
+/* Buttons */
+button, .primary-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover, .primary-btn:hover {
+  background: linear-gradient(45deg, #0056b3, #003f80);
+}
